@@ -10,9 +10,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2><a href="https://notesatamrita.me">Amrita Repo</a></h2>
         </div>
-        <p className="App-intro">
-          Site Under Construction until then use <a href="https://notesatamrita.me">Notes@Amrita</a>.
-        </p>
+        <div className="Grid">
+          <article>TimeTable</article>
+          <article>Notes</article>
+          <article>Question bank</article>
+         <article>4</article>
+         <article>5</article>
+          <article>6</article>
+        </div>
       </div>
     );
   }

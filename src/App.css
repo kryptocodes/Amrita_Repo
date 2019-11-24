@@ -42,3 +42,28 @@ p{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Grid{
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%; 
+  box-sizing: border-box;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 25px;   /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 30px;
+}
+article {
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+article:nth-child(odd) {
+  background-color: #55BBE9;
+}
+
+article:nth-child(even) {
+  background-color: #2bbe5c;
+}
