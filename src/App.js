@@ -1,26 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-class App extends Component {
-  render() {
+import Nav from './nav';
+import Tim from './tim';
+import Home from './home';
+import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
+function App(){
     return (
+      <Router>
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2><a href="https://notesatamrita.me">Amrita Repo</a></h2>
-        </div>
-        <div className="Grid">
-          <article>TimeTable</article>
-          <article>Notes</article>
-          <article>Question bank</article>
-         <article>4</article>
-         <article>5</article>
-          <article>6</article>
-        </div>
+       <Nav/>
+       <Switch>
+       <Route path="/" exact component={Home}/>
+       <Route path="/timetable" component={Tim}/>
+        </Switch>
       </div>
+      </Router>
     );
-  }
 }
 
 export default App;

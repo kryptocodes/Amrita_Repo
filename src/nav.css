@@ -1,0 +1,12 @@
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: #000;
+}
+nav h1,p{
+    color: aliceblue;
+    text-align: center;
+}

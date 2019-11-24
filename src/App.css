@@ -1,77 +1,24 @@
-/*.App {
+.App {
   text-align: center;
-}*/
+}
 
 .App-logo {
-  animation: App-logo-spin infinite 10s linear;
-  height: 35px;
-  float:left;
-  margin-top: -1px;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
   background-color: #222;
-  height: 50px;
+  height: 150px;
   padding: 20px;
   color: white;
 }
-a{
-  text-decoration: none;
-  color: antiquewhite;
-  margin-top: auto;
-}
-h2{
-  
-  margin-top: auto;
-}
-
 
 .App-intro {
   font-size: large;
 }
 
-.App-intro a{
-  color: #222;
-  text-decoration: underline;
-}
-p{
-  text-align: center;
-  color: aliceblue;
-}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-.Grid{
-  margin: 30px auto;
-  padding: 0 20px;
-  width: 100%; 
-  box-sizing: border-box;
-  display: grid;
-  /* Define Auto Row size */
-  grid-auto-rows: 25px;   /*Define our columns */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  grid-gap: 30px;
-}
-@media screen and (max-width:900px)
-{
-  .Grid{
-    grid-auto-rows: 90px;  /*Define our columns */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-
-  }
-}
-article {
-  border-radius: 10px;
-  padding: 20px;
-  color: #fff;
-}
-
-article:nth-child(odd) {
-  background-color: #55BBE9;
-}
-
-article:nth-child(even) {
-  background-color: #2bbe5c;
 }
