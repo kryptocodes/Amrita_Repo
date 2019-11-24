@@ -2,4 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  animation: colorchange 10s;
+  animation-iteration-count:infinite;
 }
+
+@keyframes colorchange
+    {
+      0%   {background:lightblue;}
+      25%  {background: blueviolet;}
+      50%  {background: blue;}
+      75%  {background:blueviolet;}
+      100% {background:lightseagreen;}
+    }
