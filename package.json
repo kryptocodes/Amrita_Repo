@@ -5,13 +5,14 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "react-router-dom": "^4.3.1"
+
   },
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "module": "npm install react-router-dom", 
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
