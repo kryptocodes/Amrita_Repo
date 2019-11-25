@@ -6,14 +6,15 @@
     display: grid;
     /* Define Auto Row size */
     grid-auto-rows: 25px;   /*Define our columns */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    grid-gap: 30px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 70px;
   }
   @media screen and (max-width:900px)
   {
     .Grid{
       grid-auto-rows: 90px;  /*Define our columns */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 20px;
   
     }
   }
@@ -21,6 +22,7 @@
     border-radius: 10px;
     padding: 35px;
     color: #fff;
+    font-size: 20px;
   }
   
   article:nth-child(odd) {
@@ -29,4 +31,9 @@
   
   article:nth-child(even) {
     background-color: #2bbe5c;
+  }
+
+  img{
+    width:10%;
+    align-content: center;
   }

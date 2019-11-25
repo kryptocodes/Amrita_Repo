@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './home.css';
+import '../css/home.css';
 import { Link } from 'react-router-dom';
 
 class Home extends Component {
@@ -10,7 +10,9 @@ class Home extends Component {
         <Link to='/timetable' style={{ textDecoration: 'none' }}>
           <article>Time table</article>
           </Link>
+          <Link to='/notes' style={{ textDecoration: 'none' }}>
           <article>Notes</article>
+          </Link>
           <article>Question bank</article>
          <article>4</article>
          <article>5</article>
