@@ -13,10 +13,18 @@ class Home extends Component {
           <Link to='/notes' style={{ textDecoration: 'none' }}>
           <article>Notes</article>
           </Link>
+          <Link to='/404' style={{ textDecoration: 'none' }}>
           <article>Question bank</article>
-         <article>4</article>
-         <article>5</article>
-          <article>6</article>
+          </Link>
+          <Link to='/404' style={{ textDecoration: 'none' }}>
+         <article>Academic Calender</article>
+         </Link>
+         <Link to='/404' style={{ textDecoration: 'none' }}>
+         <article>Bus Timings</article>
+         </Link>
+         <Link to='/404' style={{ textDecoration: 'none' }}>
+          <article>Exam Schedule</article>
+          </Link>
         </div>
       </div>
     );

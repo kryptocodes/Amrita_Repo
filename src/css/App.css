@@ -22,3 +22,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Collapsible{
+width: 100%;
+display: block;
+position: relative;
+overflow: hidden;
+transition: height 300ms cubic-bezi
+}
+
+.container
+{
+  width:50%;
+  margin:auto;
+}
+
+label
+{
+  font-size: 20px;
+}

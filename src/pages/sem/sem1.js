@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import '../../css/sidenav.css';
+import '../../css/home.css';
+import '../../css/button.css';
 import Collapsible from '../../Component/Collapsible';
 
 class sem1 extends Component {
   render() {
     return (
-        <div class="sidenav">
-        <Collapsible trigger="Engineering Mathematics">
-        <a href="404.html">Engineering Graphics</a>
-        <a href="404.html">Communicative English</a>
-        <a href="404.html">Engineering Chemistry</a>
-        </Collapsible>
-        <a href="404.html">Engineering Mathematics </a>
-        <a href="404.html">Python Programming</a>
-        <a href="404.html">Engineering Graphics</a>
-        <a href="404.html">Communicative English</a>
-        <a href="404.html">Engineering Chemistry</a>
-        <a href="404.html">Engineering Physics</a>
-        
-        <a href="404.html">Engineering Physics</a>
+        <div className="Grid">
+        <article> <Collapsible trigger="Engineering Mathematics">
+       Sem 1</Collapsible></article>
+          <article>Sem 2</article>
+          <article>Sem 3</article>
+         <article>Sem 4</article>
+         <article>Sem 5</article>
+          <article>Sem 6</article>
         </div>
+
+      
+
+
     );
   }
 }
