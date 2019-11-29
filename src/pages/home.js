@@ -20,7 +20,7 @@ class Home extends Component {
          <article>Academic Calender</article>
          </Link>
          <Link to='/404' style={{ textDecoration: 'none' }}>
-         <article>Bus Timings</article>
+         <article>Curriculum</article>
          </Link>
          <Link to='/404' style={{ textDecoration: 'none' }}>
           <article>Exam Schedule</article>
