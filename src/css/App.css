@@ -36,9 +36,25 @@ transition: height 300ms cubic-bezi
   width:50%;
   margin:auto;
 }
-
-
+.sel{
+  position: relative;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  
+}
 label
 {
   font-size: 20px;
+}
+
+img{
+  width: unset !important;
+  margin:auto;
+  padding:20px;
+  max-width: 100%;
+  height: auto;
 }

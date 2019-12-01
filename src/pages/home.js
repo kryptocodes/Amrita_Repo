@@ -10,12 +10,10 @@ class Home extends Component {
         <Link to='/timetable' style={{ textDecoration: 'none' }}>
           <article>Time table</article>
           </Link>
-          <Link to='/notes' style={{ textDecoration: 'none' }}>
-          <article>Notes</article>
-          </Link>
           <Link to='/404' style={{ textDecoration: 'none' }}>
           <article>Question bank</article>
           </Link>
+          <a href="http://moodle.amrita.edu.in/login/index.php"><article>Moodle</article></a>
           <Link to='/404' style={{ textDecoration: 'none' }}>
          <article>Academic Calender</article>
          </Link>
