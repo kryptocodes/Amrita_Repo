@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
 .button{
   margin:auto;
   padding:20px;
 }
+.sel{
+  border: 0;
+  font: 30px;
+  font-family: 'Cairo', sans-serif;
+}
+
