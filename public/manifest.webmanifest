@@ -1,0 +1,16 @@
+{
+  "name": "Amrita Repo",
+  "short_name": "amrita repo",
+  "description": "notes",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3498DB",
+  "icons": [
+    {
+      "src" : "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
