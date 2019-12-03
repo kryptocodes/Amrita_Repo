@@ -8,8 +8,21 @@ class Tim extends Component {
     sem: ''
   };
   handleClick = () => {
-    this.rendertim(this.state.dept,this.state.sem)
+    this.rendertim(this.state.dept,this.state.sem,this.state.sec)
   }
+  renderclass(dept,sem)
+  {
+      if(dept==="CSE" && (sem==="Sem 1" || sem === "Sem 3"))
+      return (<div>
+      <label>Choose Batch</label>
+      <select className="sel" onChange={(e) => this.setState({sec: e.target.value})}>
+      <option></option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+    </select>
+    </div>);
+  }
+
   render() {
     return (
       <form >
@@ -36,18 +49,21 @@ class Tim extends Component {
             <option value1="7">Sem 7</option>
             <option value1="8">Sem 8</option>
           </select>
+          <br/>
+          {this.renderclass(this.state.dept,this.state.sem)}
         <div className="button">
           <button className="button" onClick={this.handleClick}/*{(f)=>this.rendertim(this.state.dept,this.state.sem)}*/>View</button>
         </div>
       </form>
     );
   }
-  rendertim(dept,sem){
+  rendertim(dept,sem,sec){
     const dp = dept;
     const sp = sem;
-    if(dp==="CSE"&& sp === "Sem 1")
+    const bh = sec;
+    if(dp==="CSE" && sp==="Sem 1" && bh === "A")
       return  window.open("https://5.imimg.com/data5/FA/BB/MY-13366359/office-organisers-500x500.jpg", "_blank");
-    else if(dp==="CSE" && sp==="Sem 2")
+    else if(dp==="CSE" && sp==="Sem 3" && (bh === "A" ||bh ==="B") )
       return window.open("https://image.shutterstock.com/image-vector/template-school-timetable-illustration-includes-260nw-704106805.jpg");
       else
       return window.open("/404");
