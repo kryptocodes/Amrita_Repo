@@ -8,6 +8,8 @@
     grid-auto-rows: 25px;   /*Define our columns */
     grid-template-columns: auto auto auto;
     grid-gap: 70px;
+    outline: none;
+    border:none;
   }
   @media screen and (min-width:1200px)
   {

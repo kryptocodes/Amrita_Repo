@@ -6,44 +6,67 @@ function sem2() {
   const [showText, setShowText] = useState(false);
   const [showone, setshowone] = useState(false);
   const [showtwo, setshowtwo] = useState(false);
+  const [showthree, setshowthree] = useState(false);
+  const [showfour, setshowfour] = useState(false);
+  const [showfive, setshowfive] = useState(false);
   return (
     <Fragment>
       <button className="buon" onClick={() => setShowText(!showText)}>
-      <article className="box" > 2019 </article>
+      <article className="box" > Engineering Mathematics - II </article>
       </button>
       {showText && <div className="content">
-         <ul><a href="#">Technical English - I</a></ul>
-         <ul><a href="#">Engineering Mathematics - I</a></ul>
-         <ul><a href="#">Engineering Physics - I</a></ul>
-         <ul><a href="#">Engineering Chemistry - I</a></ul>
-         <ul><a href="#">Engineering Graphics</a></ul>
-         <ul><a href="#">Problem Solving and Python Programming</a></ul>
+         <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
          </div>
       }
       <button className="buon" onClick={() => setshowone(!showone)}>
-      <article > 2018 </article>
+      <article > Physics for Civil Engineering </article>
       </button>
       {showone && <div className="content">
-         <ul><a href="#">Technical English - I</a></ul>
-         <ul><a href="#">Engineering Mathematics - I</a></ul>
-         <ul><a href="#">Engineering Physics - I</a></ul>
-         <ul><a href="#">Engineering Chemistry - I</a></ul>
-         <ul><a href="#">Engineering Graphics</a></ul>
-         <ul><a href="#">Problem Solving and Python Programming</a></ul>
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
          </div>
       }
       <button className="buon" onClick={() => setshowtwo(!showtwo)}>
-      <article > 2017 </article>
+      <article > Materials Science </article>
       </button>
       {showtwo && <div className="content">
-         <ul><a href="#">Technical English - I</a></ul>
-         <ul><a href="#">Engineering Mathematics - I</a></ul>
-         <ul><a href="#">Engineering Physics - I</a></ul>
-         <ul><a href="#">Engineering Chemistry - I</a></ul>
-         <ul><a href="#">Engineering Graphics</a></ul>
-         <ul><a href="#">Problem Solving and Python Programming</a></ul>
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
          </div>
       }
+        <button className="buon" onClick={() => setshowthree(!showthree)}>
+      <article > Engineering Physics - I </article>
+      </button>
+      {showthree && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowfour(!showfour)}>
+      <article > Physics for Information Science </article>
+      </button>
+      {showfour && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+       <button className="buon" onClick={() => setshowfive(!showfive)}>
+      <article > Physics for Electronics Engineering </article>
+      </button>
+      {showfive && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      
+      
     </Fragment>
   );
 }
