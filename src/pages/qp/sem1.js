@@ -33,7 +33,7 @@ function sem1() {
   const [showtwo, setshowtwo] = useState(false);
   return (
     <Fragment>
-      <button className="button" onClick={() => setShowText(!showText)}>
+      <button className="buon" onClick={() => setShowText(!showText)}>
       <article className="box" > 2019 </article>
       </button>
       {showText && <div className="content">
@@ -46,7 +46,7 @@ function sem1() {
          <ul><a href="#">Problem Solving and Python Programming</a></ul>
          </div>
       }
-      <button className="box" onClick={() => setshowone(!showone)}>
+      <button className="buon" onClick={() => setshowone(!showone)}>
       <article > 2018 </article>
       </button>
       {showone && <div className="content">
@@ -58,7 +58,7 @@ function sem1() {
          <ul><a href="#">Problem Solving and Python Programming</a></ul>
          </div>
       }
-      <button className="box" onClick={() => setshowtwo(!showtwo)}>
+      <button className="buon" onClick={() => setshowtwo(!showtwo)}>
       <article > 2017 </article>
       </button>
       {showtwo && <div className="content">
