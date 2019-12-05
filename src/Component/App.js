@@ -6,7 +6,9 @@ import Tim from '../pages/tim';
 import Home from '../pages/home';
 import f4f from '../pages/404';
 import qp from '../pages/qp/qp';
-import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
+import acad from '../pages/acad';
+import sem1 from '../pages/qp/sem1'
+import {BrowserRouter as Router, Switch,Route,Redirect} from 'react-router-dom';
 
 function App(){
     return (
@@ -18,6 +20,9 @@ function App(){
        <Route path="/timetable" component={Tim}/>
        <Route path="/404" component={f4f}/>
        <Route path="/questionbank" component={qp}/>
+       <Route path="/academic" component={acad}/>
+       <Route path="/sem1" component={sem1}/>
+       <Redirect to="/404" /> 
         </Switch>
       </div>
       </Router>

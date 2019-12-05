@@ -6,7 +6,7 @@ class qp extends Component {
     return (
       <div>
         <div className="Grid">
-        <Link to='/404' style={{ textDecoration: 'none' }}>
+        <Link to='/sem1' style={{ textDecoration: 'none' }}>
           <article>Sem 1</article>
           </Link>
           <Link to='/404' style={{ textDecoration: 'none' }}>

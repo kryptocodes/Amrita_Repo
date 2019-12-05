@@ -9,7 +9,7 @@ class Nav extends Component {
          <Link to="/" style={{ textDecoration: 'none' }}>
          <h1>Amrita Repo</h1>
          </Link>
-         <p>One for all</p>
+         <p><a href="https://youtu.be/s2KWRC342Wc">One for all</a></p>
      </nav>
     );
   }
