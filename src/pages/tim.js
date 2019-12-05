@@ -25,7 +25,7 @@ class Tim extends Component {
 
   render() {
     return (
-      <form >
+      <form className="form">
           <label>Choose Branch</label>
           <select className="sel" onChange={(e) => this.setState({dept: e.target.value})}>
             <option></option>

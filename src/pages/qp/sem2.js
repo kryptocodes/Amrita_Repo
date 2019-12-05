@@ -1,33 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import '../../css/qp.css';
 
-/*class sem1 extends Component {
-  state={};
-  handleClick =() =>{
-    this.renderbox(this.state.r1)
-  }
-  renderbox(r1)
-  {
-    return <h1>HEllo world</h1>
-  }
-  render() {
-    return (
-      <div>
-        <div className="Grid">
-          <article >2019</article>
-         
-         
-          <article>2018</article>
-         
-          <article>2017</article>
-          <article>2016</article>
-        </div>
-      </div>
-    );
-  }
-}
-*/
-function sem1() {
+
+function sem2() {
   const [showText, setShowText] = useState(false);
   const [showone, setshowone] = useState(false);
   const [showtwo, setshowtwo] = useState(false);
@@ -37,9 +12,8 @@ function sem1() {
       <article className="box" > 2019 </article>
       </button>
       {showText && <div className="content">
-          <ul>Technical English - I</ul>
-          <a href="http://www.hariganesh.com/pdf/University%20Question%20Papers/R17/M1/M1_R17_AprilMay_19.pdf" target="_blank" download>
-         <ul>Engineering Mathematics - I</ul></a>
+         <ul><a href="#">Technical English - I</a></ul>
+         <ul><a href="#">Engineering Mathematics - I</a></ul>
          <ul><a href="#">Engineering Physics - I</a></ul>
          <ul><a href="#">Engineering Chemistry - I</a></ul>
          <ul><a href="#">Engineering Graphics</a></ul>
@@ -76,4 +50,4 @@ function sem1() {
 
 
 
-export default sem1;
+export default sem2;

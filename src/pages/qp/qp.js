@@ -9,7 +9,7 @@ class qp extends Component {
         <Link to='/sem1' style={{ textDecoration: 'none' }}>
           <article>Sem 1</article>
           </Link>
-          <Link to='/404' style={{ textDecoration: 'none' }}>
+          <Link to='sem2' style={{ textDecoration: 'none' }}>
           <article>Sem 2</article>
           </Link>
           <Link to='/404' style={{ textDecoration: 'none' }}>
