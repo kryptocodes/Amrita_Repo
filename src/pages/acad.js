@@ -8,7 +8,8 @@ class acad extends Component{
     this.state = {
       loading: true
     };
-  }hideSpinner = () => {
+  }
+  hideSpinner = () => {
     this.setState({
       loading: false
     });
@@ -18,10 +19,12 @@ class acad extends Component{
       <div className="cldr">
       {this.state.loading ? (
         <Fragment>
+       
         <div className="loader">
           </div>
-       <p> “Love sustains everything.”
-                -- Mata Amritanandamayi </p>
+          <div className="txt"> “Love sustains everything.”</div>
+          <div className="txt1">-- Mata Amritanandamayi</div>
+          
           </Fragment>
       ) : null}
      

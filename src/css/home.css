@@ -64,7 +64,20 @@
     padding-top:30px;
 
   }
-
+.txt{
+  text-align: center;
+  color:white;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 95px);
+}
+.txt1{
+  text-align: center;
+  color:white;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 55px);
+}
 .loader {
   border: 5px solid #f3f3f3;
   border-radius: 50%;
