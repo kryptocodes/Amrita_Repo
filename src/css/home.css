@@ -19,7 +19,10 @@
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 100px;
       grid-gap: 1rem;
-    }
+    }  
+   
+    
+    
   }
   @media screen and (max-width:900px)
   {
@@ -28,6 +31,10 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
   
+    }
+    .myClassname{
+      width: 350px;
+      height:400px; 
     }
   }
   article {
@@ -53,4 +60,8 @@
     text-decoration: none;
   }
 
-  
+  .cldr{
+    padding-top:30px;
+    
+  }
+

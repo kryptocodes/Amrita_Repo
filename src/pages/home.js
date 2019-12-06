@@ -14,7 +14,7 @@ class Home extends Component {
           <article>Question bank</article>
           </Link>
           <a href="http://moodle.amrita.edu.in/login/index.php"><article>Moodle</article></a>
-          <Link to='/404' style={{ textDecoration: 'none' }}>
+          <Link to='/academic' style={{ textDecoration: 'none' }}>
          <article>Academic Calender</article>
          </Link>
          <Link to='/404' style={{ textDecoration: 'none' }}>
