@@ -16,34 +16,11 @@ article,ul{
   color: white;
 
   }
-  
-  .content{
-      display: grid;
-      grid-column-gap: 10px;
-      grid-template-columns: auto auto auto;
-      text-align: center;
-   
-  }
-  @media screen and (max-width:900px)
-  {
-      .content{
-        padding-left:20%;
-        padding-right:20%;
-        display: grid;
-      grid-column-gap: 10px;
-      grid-template-columns:unset !important;
-      }
-
-  }
-  a{
-      text-decoration: none;
-      color:white;
-  }
   .buon {
     text-Decoration:none,;
     background:none;
     border:none;
-    padding:20px;
+    padding:15px;
     outline:none;
     text-align: center;
     justify-content: center;
@@ -52,6 +29,33 @@ article,ul{
   .bbx{
     display: grid;
     grid-template-rows: auto ;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 30%;
+    padding-left: 30%;
   }
+  .content{
+      display: grid;
+      grid-column-gap: 10px;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+   
+  }
+  @media only screen and (max-width:900px)
+  {
+      .content{
+        padding-left:5%;
+        padding-right:5%;
+        display: grid;
+      grid-column-gap: 10px;
+      grid-template-columns: auto auto;
+      }
+      .bbx{
+        padding-right: 10%;
+        padding-left: 10%;
+      }
+
+  }
+  a{
+      text-decoration: none;
+      color:white;
+  }
+  
