@@ -51,9 +51,8 @@ class Tim extends Component {
           </select>
           <br/>
           {this.renderclass(this.state.dept,this.state.sem)}
-        <div className="button">
-          <button className="button" onClick={this.handleClick}/*{(f)=>this.rendertim(this.state.dept,this.state.sem)}*/>View</button>
-        </div>
+          <button className="button" onClick={this.handleClick}/*{(f)=>this.rendertim(this.state.dept,this.state.sem)}*/>
+            <div className="btn">View</div></button>
       </form>
     );
   }

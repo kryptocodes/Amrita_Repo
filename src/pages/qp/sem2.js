@@ -11,6 +11,7 @@ function sem2() {
   const [showfive, setshowfive] = useState(false);
   return (
     <Fragment>
+       <div className="bbx">
       <button className="buon" onClick={() => setShowText(!showText)}>
       <article className="box" > Engineering Mathematics - II </article>
       </button>
@@ -66,7 +67,7 @@ function sem2() {
          </div>
       }
       
-      
+      </div>
     </Fragment>
   );
 }

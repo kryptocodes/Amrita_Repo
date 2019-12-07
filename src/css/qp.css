@@ -18,9 +18,10 @@ article,ul{
   }
   
   .content{
+      display: grid;
+      grid-column-gap: 10px;
+      grid-template-columns: auto auto auto;
       text-align: center;
-      padding-left:35%;
-      padding-right:35%;
    
   }
   @media screen and (max-width:900px)
@@ -28,7 +29,11 @@ article,ul{
       .content{
         padding-left:20%;
         padding-right:20%;
+        display: grid;
+      grid-column-gap: 10px;
+      grid-template-columns:unset !important;
       }
+
   }
   a{
       text-decoration: none;
@@ -40,4 +45,13 @@ article,ul{
     border:none;
     padding:20px;
     outline:none;
+    text-align: center;
+    justify-content: center;
+    }
+
+  .bbx{
+    display: grid;
+    grid-template-rows: auto ;
+    padding-right: 25%;
+    padding-left: 25%;
   }
