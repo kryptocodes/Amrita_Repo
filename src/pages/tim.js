@@ -1,6 +1,8 @@
 import React,{Component } from 'react';
 import '../css/App.css';
 import '../css/button.css';
+import csa from '../img/csa.jpg';
+import csb from '../img/csb.jpg';
 
 class Tim extends Component {
   state = {
@@ -12,7 +14,7 @@ class Tim extends Component {
   }
   renderclass(dept,sem)
   {
-      if(dept==="CSE" && (sem==="Sem 1" || sem === "Sem 3"))
+      if(dept==="CSE" && (sem==="Sem 1" || sem === "Sem 4"))
       return (<div>
       <label>Choose Batch</label>
       <select className="sel" onChange={(e) => this.setState({sec: e.target.value})}>
@@ -62,9 +64,11 @@ class Tim extends Component {
     const bh = sec;
     if(dp==="CSE" && sp==="Sem 1" && bh === "A")
       return  window.open("https://5.imimg.com/data5/FA/BB/MY-13366359/office-organisers-500x500.jpg", "_blank");
-    else if(dp==="CSE" && sp==="Sem 3" && (bh === "A" ||bh ==="B") )
-      return window.open("https://image.shutterstock.com/image-vector/template-school-timetable-illustration-includes-260nw-704106805.jpg");
-      else
+    else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
+      return window.open(csa);
+    else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
+      return window.open(csb);
+    else
       return window.open("/404");
   }
 }
