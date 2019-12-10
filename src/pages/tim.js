@@ -7,10 +7,12 @@ import csb from '../img/csb.jpg';
 class Tim extends Component {
   state = {
     dept: '',
-    sem: ''
+    sem: '',
+    showComponent:false
   };
-  handleClick = () => {
-    this.rendertim(this.state.dept,this.state.sem,this.state.sec)
+  handleClick = (e) => {
+    this.rendertim(this.state.dept,this.state.sem,this.state.sec);
+    e.preventDefault();
   }
   renderclass(dept,sem)
   {
@@ -53,8 +55,14 @@ class Tim extends Component {
           </select>
           <br/>
           {this.renderclass(this.state.dept,this.state.sem)}
-          <button className="button" onClick={this.handleClick}/*{(f)=>this.rendertim(this.state.dept,this.state.sem)}*/>
+          <button className="button" onClick={this.handleClick}
+          disabled={(!this.state.dept,!this.state.sem)}
+            /*{(f)=>this.rendertim(this.state.dept,this.state.sem)}*/>
             <div className="btn">View</div></button>
+            {this.state.showComponent ?
+              <p style={{fontSize:"1rem"}}>Sorry....Time table not yet uploaded.<br/>Check back later</p> :
+              null
+           }
       </form>
     );
   }
@@ -67,10 +75,11 @@ class Tim extends Component {
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
       return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
-      return window.open(csb);
+      return window.open(csb); 
     else
-      return window.open("/404");
-  }
+      return this.setState({
+        showComponent: true
+      });
 }
-
+}
 export default Tim;
