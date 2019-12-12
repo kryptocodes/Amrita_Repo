@@ -1,12 +1,12 @@
 {
   "name": "Amrita Repo",
-  "short_name": "amrita repo",
+  "short_name": "Amrita repo",
   "description": "notes",
   "lang": "en",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#4834DF",
- "background_color": "#ffffff",
+  "theme_color": "#000000",
+ "background_color": "#2C3335",
   "icons": [
     {
       "src" : "android-chrome-192x192.png",

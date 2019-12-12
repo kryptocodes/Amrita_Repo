@@ -73,13 +73,16 @@ class Tim extends Component {
     if(dp==="CSE" && sp==="Sem 1" && bh === "A")
       return  window.open("https://5.imimg.com/data5/FA/BB/MY-13366359/office-organisers-500x500.jpg", "_blank");
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
-      return (window.open(csa),location.reload());
+      return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
-      return (window.open(csb),location.reload()); 
+      return window.open(csb); 
     else
-      return this.setState({
+      return (this.setState({
         showComponent: true
-      });
+        
+      }),setTimeout(() => this.setState({
+        showComponent: false}
+        ),2000));
 }
 }
 export default Tim;
