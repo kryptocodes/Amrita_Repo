@@ -73,9 +73,9 @@ class Tim extends Component {
     if(dp==="CSE" && sp==="Sem 1" && bh === "A")
       return  window.open("https://5.imimg.com/data5/FA/BB/MY-13366359/office-organisers-500x500.jpg", "_blank");
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
-      return window.open(csa);
+      return (window.open(csa),location.reload());
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
-      return window.open(csb); 
+      return (window.open(csb),location.reload()); 
     else
       return this.setState({
         showComponent: true
