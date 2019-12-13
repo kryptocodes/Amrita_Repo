@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo|Poppins&display=swap');
 
 
 .button{
@@ -21,14 +21,15 @@
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
   
-  background-color: #0A79DF;
+  /*background-color: #0A79DF;*/
+  background-color:#000000;
   color: #ecf0f1;
   
   transition: background-color .3s;
 }
 
 .btn:hover, .btn:focus {
-  background-color: #3498DB;
+  background-color: #272424;
 }
 
 .btn > * {

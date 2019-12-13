@@ -25,13 +25,6 @@
   to { transform: rotate(360deg); }
 }
 
-.Collapsible{
-width: 100%;
-display: block;
-position: relative;
-overflow: hidden;
-transition: height 300ms cubic-bezi
-}
 
 .container
 {

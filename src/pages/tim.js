@@ -3,6 +3,8 @@ import '../css/App.css';
 import '../css/button.css';
 import csa from '../img/csa.jpg';
 import csb from '../img/csb.jpg';
+import cse6 from '../img/cse_6.jpg';
+import cse8 from '../img/cse_8.jpg';
 
 class Tim extends Component {
   state = {
@@ -75,7 +77,11 @@ class Tim extends Component {
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
       return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
-      return window.open(csb); 
+      return window.open(csb);
+    else if(dp==="CSE" && sp==="Sem 6")
+      return window.open(cse6);
+    else if(dp==="CSE" && sp==="Sem 8")
+      return window.open(cse8);   
     else
       return (this.setState({
         showComponent: true
