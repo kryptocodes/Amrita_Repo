@@ -9,6 +9,19 @@ function sem2() {
   const [showthree, setshowthree] = useState(false);
   const [showfour, setshowfour] = useState(false);
   const [showfive, setshowfive] = useState(false);
+  const [showsix,setshowsix] = useState(false);
+  const [showseven,setshowseven] = useState(false);
+  const [showeight,setshoweight] = useState(false);
+  const [shownine,setshownine] = useState(false);
+  const [showten,setshowten] = useState(false);
+  const [showal,setshowal] = useState(false);
+  const [showbl,setshowbl] = useState(false);
+  const [showcl,setshowcl] = useState(false);
+  const [showdl,setshowdl] = useState(false);
+  const [showel,setshowel] = useState(false);
+  const [showfl,setshowfl] = useState(false);
+  const [showgl,setshowgl] = useState(false);
+  const [showhl,setshowhl] = useState(false);
   return (
     <Fragment>
        <div className="bbx">
@@ -66,7 +79,132 @@ function sem2() {
          <ul><a href="#">2017</a></ul>
          </div>
       }
-      
+       <button className="buon" onClick={() => setshowsix(!showsix)}>
+      <article > Basic Electrical and Electronics Engineering</article>
+      </button>
+      {showsix && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+       <button className="buon" onClick={() => setshowsix(!showsix)}>
+      <article > Basic Electrical and Electronics Engineering</article>
+      </button>
+      {showsix && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+       <button className="buon" onClick={() => setshowseven(!showseven)}>
+      <article >Basic Civil and Mechanical Engineering</article>
+      </button>
+      {showseven && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+       <button className="buon" onClick={() => setshoweight(!showeight)}>
+      <article >Basic Civil and Mechanical Engineering</article>
+      </button>
+      {showeight && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshownine(!shownine)}>
+      <article >Basic Electrical, Electronics and Instrumentation Engineering</article>
+      </button>
+      {shownine && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+       <button className="buon" onClick={() => setshowten(!showten)}>
+      <article >Basic Electrical and Instrumentation Engineering</article>
+      </button>
+      {showten && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowal(!showal)}>
+      <article >Basic Electrical, Electronics and Measurement Engineering</article>
+      </button>
+      {showal && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowbl(!showbl)}>
+      <article >Programming in C</article>
+      </button>
+      {showbl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowcl(!showcl)}>
+      <article >Circuit Analysis</article>
+      </button>
+      {showcl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowdl(!showdl)}>
+      <article >Electronic Devices</article>
+      </button>
+      {showdl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowel(!showel)}>
+      <article >Circuit Theory</article>
+      </button>
+      {showel && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowfl(!showfl)}>
+      <article >Environmental Science and Engineering</article>
+      </button>
+      {showfl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowgl(!showgl)}>
+      <article >Engineering Mathematics</article>
+      </button>
+      {showgl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
+      <button className="buon" onClick={() => setshowhl(!showhl)}>
+      <article >Technical English</article>
+      </button>
+      {showhl && <div className="content">
+      <ul><a href="#">2019</a></ul>
+         <ul><a href="#">2018</a></ul>
+         <ul><a href="#">2017</a></ul>
+         </div>
+      }
       </div>
     </Fragment>
   );

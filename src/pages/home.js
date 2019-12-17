@@ -17,7 +17,7 @@ class Home extends Component {
           <Link to='/academic' style={{ textDecoration: 'none' }}>
          <article>Academic Calender</article>
          </Link>
-         <Link to='/404' style={{ textDecoration: 'none' }}>
+         <Link to='/cirrculum' style={{ textDecoration: 'none' }}>
          <article>Curriculum</article>
          </Link>
          <Link to='/404' style={{ textDecoration: 'none' }}>

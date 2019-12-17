@@ -42,4 +42,4 @@ class acad extends Component{
   }
 }
 
-export default acad
+export default acad;
