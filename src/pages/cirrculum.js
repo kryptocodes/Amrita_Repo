@@ -11,8 +11,12 @@ function cirrculum() {
   <Row>
     <Col>Semester 3</Col>
     <Col>Semester 4</Col>
+  </Row>
+  <Row>
     <Col>Semester 5</Col>
     <Col>Semester 6</Col>
+  </Row>
+  <Row>
     <Col>Semester 7</Col>
     <Col>Semester 8</Col>
   </Row>
