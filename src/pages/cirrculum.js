@@ -9,7 +9,7 @@ function cirrculum() {
     <Col>Semester 2</Col>
   </Row>
   <Row>
-    <Col>Semester 3</Col>
+    <Col >Semester 3</Col>
     <Col>Semester 4</Col>
   </Row>
   <Row>
