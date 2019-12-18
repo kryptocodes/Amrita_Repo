@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
- 
+import '../css/home.css';
+
 function cirrculum() {
     return (
       <div>
         <h1 style={{color:'white'}}>CSE</h1>
+      <div className="pc">
       <Container fluid style={{ marginTop:'30px',lineHeight: '32px',backgroundColor:'black',color:'white' }}>
       <Row debug >
         <Col debug  >Semester 1 </Col>
@@ -177,6 +179,7 @@ function cirrculum() {
         <Col debug></Col>
       </Row>
       </Container>
+      </div>
     </div>
     )
 }
