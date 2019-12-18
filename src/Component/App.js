@@ -23,7 +23,7 @@ function App(){
        <Route path="/404" component={f4f}/>
        <Route path="/questionbank" component={qp}/>
        <Route path="/academic" component={acad}/>
-       <Route path="/cirrculum" component={cirrculum}/>
+       <Route path="/curriculum" component={cirrculum}/>
        <Route path="/sem1" component={sem1}/>
        <Route path="/sem2" component={sem2}/>
        <Redirect to="/404" /> 

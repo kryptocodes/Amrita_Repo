@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import '../css/home.css';
 
-function cirrculum() {
+function curriculum() {
     return (
       <div>
         <h1 style={{color:'white'}}>CSE</h1>
@@ -184,4 +184,4 @@ function cirrculum() {
     )
 }
 
-export default cirrculum;
+export default curriculum;
