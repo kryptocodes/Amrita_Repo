@@ -4,18 +4,19 @@ import '../css/home.css';
 
 class curriculum extends Component{
   state={
-    dept:'',
+    dept:'CSE',
   };
   rendersub(dept)
   {
     if(dept==="CSE")
       return <div> {this.cse()} </div>;
+    if(dept==="ECE")
+      return <div> {this.ece()} </div>;
   }
   render(){
   return(
     <div style={{marginTop:'20px'}}>
     <select className="sel" onChange={(e) => this.setState({dept: e.target.value})}>
-            <option>Select Branch</option>
             <option value="CSE">CSE</option>
             <option value="ECE">ECE</option>
             <option value="EEE">EEE</option>
@@ -207,6 +208,183 @@ cse() {
       </div>
     </div>
     )
+}
+ece() {
+  return (
+    <div>
+      <h1 style={{color:'white'}}>Electronics and Communication Engineering</h1>
+    <div className="pc">
+    <Container fluid style={{ marginTop:'30px',lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 1 </Col>
+      <Col debug>Semester 2</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Engineering Mathematics - I </Col>
+      <Col debug >Engineering Mathematics II</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Engineering Physics - I</Col>
+    <Col debug>Physics for Electronics Engineering</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Engineering Chemistry - I</Col>
+      <Col debug>Basic Electrical and Instrumentation Engineering </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Engineering Graphics</Col>
+      <Col debug>Circuit Analysis</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Problem Solving and Python Programming</Col>
+      <Col debug>Electronic Devices</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Communicative English</Col>
+      <Col debug>Technical English</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Problem Solving and Python Programming Laboratory</Col>
+      <Col debug>Circuits and Devices Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Physics and Chemistry Laboratory</Col>
+      <Col debug>Engineering Practices Laboratory</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 3 </Col>
+      <Col debug>Semester 4</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Linear Algebra and Partial Differential Equations</Col>
+      <Col debug >Probability and Random Processes </Col>
+    </Row>
+    <Row debug>
+    <Col debug>Fundamentals of Data Structures In C</Col>
+    <Col debug>Electronic Circuits II </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Electronic Circuits- I</Col>
+      <Col debug>Communication Theory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Signals and Systems </Col>
+      <Col debug>Electromagnetic Fields</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Digital Electronics</Col>
+      <Col debug>Linear Integrated Circuits</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Control System Engineering </Col>
+      <Col debug>Environmental Science and Engineering</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Fundamentals of Data Structures in C Laboratory </Col>
+      <Col debug>Circuits Design and Simulation Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Analog and Digital Circuits Laboratory</Col>
+      <Col debug>Linear Integrated Circuits Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Interpersonal Skills/Listening and Speaking</Col>
+      <Col debug></Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 5 </Col>
+      <Col debug>Semester 6</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug>
+      <Col debug >Digital Communication</Col>
+      <Col debug >Microprocessors and Microcontrollers</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Discrete-Time Signal Processing</Col>
+    <Col debug>VLSI Design</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Computer Architecture and Organization</Col>
+      <Col debug>Wireless Communication</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Communication Networks</Col>
+      <Col debug>Principles of Management</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Professional Elective I</Col>
+      <Col debug>Transmission Lines and RF Systems</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Open Elective I</Col>
+      <Col debug>Professional Elective II</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Digital Signal Processing Laboratory </Col>
+      <Col debug>Microprocessors and Microcontrollers Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Communication Systems Laboratory </Col>
+      <Col debug>VLSI Design Laboratory </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Networks Laboratory</Col>
+      <Col debug>Technical Seminar</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 7 </Col>
+      <Col debug>Semester 8</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Antennas and Microwave Engineering</Col>
+      <Col debug >Professional Elective - IV</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Optical Communication </Col>
+    <Col debug>Professional Elective - V</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Embedded and Real Time Systems</Col>
+      <Col debug>Project Work</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Ad hoc and Wireless Sensor Networks</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Professional Elective -III </Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Open Elective - II </Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Embedded Laboratory</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Advanced Communication Laboratory</Col>
+      <Col debug></Col>
+    </Row>
+    </Container>
+    </div>
+  </div>
+  )
 }
 }
 
