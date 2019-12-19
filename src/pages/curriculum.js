@@ -1,11 +1,36 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import '../css/home.css';
 
-function curriculum() {
+class curriculum extends Component{
+  state={
+    dept:'',
+  };
+  rendersub(dept)
+  {
+    if(dept==="CSE")
+      return <div> {this.cse()} </div>;
+  }
+  render(){
+  return(
+    <div style={{marginTop:'20px'}}>
+    <select className="sel" onChange={(e) => this.setState({dept: e.target.value})}>
+            <option>Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MECH">MECH</option>
+          </select>
+    {this.rendersub(this.state.dept)}
+   </div>
+  )
+}
+
+cse() {
     return (
       <div>
-        <h1 style={{color:'white'}}>CSE</h1>
+        <h1 style={{color:'white'}}>Computer Science and Engineering</h1>
       <div className="pc">
       <Container fluid style={{ marginTop:'30px',lineHeight: '32px',backgroundColor:'black',color:'white' }}>
       <Row debug >
@@ -182,6 +207,7 @@ function curriculum() {
       </div>
     </div>
     )
+}
 }
 
 export default curriculum;
