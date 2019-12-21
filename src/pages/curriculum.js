@@ -16,6 +16,8 @@ class curriculum extends Component{
       return <div> {this.eee()} </div>;
     if(dept==="CIVIL")
       return <div> {this.civil()} </div>;
+    if(dept==="MECH")
+      return <div> {this.mech()} </div>;
   }
   render(){
   return(
@@ -740,6 +742,188 @@ civil() {
   </div>
   )
 }
+mech() {
+  return (
+    <div>
+      <h1 style={{color:'white'}}>Mechanical Engineering</h1>
+    <div className="pc">
+    <Container fluid style={{ marginTop:'30px',lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 1 </Col>
+      <Col debug>Semester 2</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Engineering Mathematics - I </Col>
+      <Col debug >Engineering Mathematics II</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Engineering Physics - I</Col>
+    <Col debug>Materials Science</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Engineering Chemistry - I</Col>
+      <Col debug>Basic Electrical, Electronics and Instrumentation Engineering </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Engineering Graphics</Col>
+      <Col debug>Environmental Science and Engineering</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Problem Solving and Python Programming</Col>
+      <Col debug>Engineering Mechanics</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Communicative English</Col>
+      <Col debug>Technical English</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Problem Solving and Python Programming Laboratory</Col>
+      <Col debug>Engineering Practices Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Physics and Chemistry Laboratory</Col>
+      <Col debug>Basic Electrical, Electronics and Instrumentation Engineering Laboratory</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 3 </Col>
+      <Col debug>Semester 4</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Transforms and Partial Differential Equations </Col>
+      <Col debug >Statistics and Numerical Methods  </Col>
+    </Row>
+    <Row debug>
+    <Col debug>Engineering Thermodynamics</Col>
+    <Col debug>Kinematics of Machinery</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Fluid Mechanics and Machinery</Col>
+      <Col debug>Manufacturing Technology – II</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Manufacturing Technology - I   </Col>
+      <Col debug>Engineering Metallurgy  </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Electrical Drives and Controls </Col>
+      <Col debug>Strength of Materials for Mechanical Engineers</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Manufacturing Technology Laboratory - I </Col>
+      <Col debug>Thermal Engineering- I </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Computer Aided Machine Drawing </Col>
+      <Col debug>Manufacturing Technology Laboratory – II</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Electrical Engineering Laboratory </Col>
+      <Col debug>Strength of Materials and Fluid Mechanics and Machinery Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Interpersonal Skills / Listening & Speaking </Col>
+      <Col debug>Advanced Reading and Writing </Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 5 </Col>
+      <Col debug>Semester 6</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug>
+      <Col debug >Thermal Engineering- II</Col>
+      <Col debug >Design of Transmission Systems</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Design of Machine Elements </Col>
+    <Col debug>Computer Aided Design and Manufacturing </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Metrology and Measurements </Col>
+      <Col debug>Heat and Mass Transfer</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Dynamics of Machines </Col>
+      <Col debug>Finite Element Analysis </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Open Elective- I </Col>
+      <Col debug>Hydraulics and Pneumatics</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Kinematics and Dynamics Laboratory</Col>
+      <Col debug>Professional Elective-I</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Thermal Engineering Laboratory</Col>
+      <Col debug>CAD / CAM Laboratory</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Metrology and Measurements Laboratory </Col>
+      <Col debug>Design and Fabrication Project  </Col>
+    </Row>
+    <Row debug>
+      <Col debug></Col>
+      <Col debug>Professional Communication</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{ lineHeight: '32px',backgroundColor:'black',color:'white' }}>
+    <Row debug >
+      <Col debug  >Semester 7 </Col>
+      <Col debug>Semester 8</Col>
+    </Row>
+    </Container>
+    <Container fluid style={{lineHeight: '32px',backgroundColor:'white'}}>
+    <Row debug >
+      <Col debug >Power Plant Engineering</Col>
+      <Col debug >Principles of Management</Col>
+    </Row>
+    <Row debug>
+    <Col debug>Process Planning and Cost Estimation </Col>
+    <Col debug>Professional Elective– IV </Col>
+    </Row>
+    <Row debug>
+      <Col debug>Mechatronics</Col>
+      <Col debug>Project Work</Col>
+    </Row>
+    <Row debug>
+      <Col debug>Open Elective - II</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Professional Elective – II</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Professional Elective – III</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Simulation and Analysis Laboratory</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Mechatronics Laboratory</Col>
+      <Col debug></Col>
+    </Row>
+    <Row debug>
+      <Col debug>Technical Seminar</Col>
+      <Col debug></Col>
+    </Row>
+    </Container>
+    </div>
+  </div>
+  )
+}
+
 }
 
 export default curriculum;
