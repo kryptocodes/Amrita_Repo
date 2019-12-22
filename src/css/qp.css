@@ -49,8 +49,8 @@ article,ul{
       grid-template-columns: auto auto;
       }
       .bbx{
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
       }
 
   }

@@ -67,25 +67,25 @@
 
   }
 .txt{
-  text-align: center;
   color:white;
   position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 115px);
+  text-align: justify;
+  top: calc(50% - 70px);
+  left: calc(50% - 150px);
 }
 .txt1{
   text-align: center;
   color:white;
   position: absolute;
   top: calc(50% - 30px);
-  left: calc(50% - 55px);
+  left: calc(50% - 35px);
 }
 .loader {
   border: 5px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 5px solid #3498db;
-  width: 20px;
-  height: 20px;
+  border-top: 5px solid #2f3a38;
+  width: 25px;
+  height: 25px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   position: absolute;

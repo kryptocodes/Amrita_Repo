@@ -2,12 +2,59 @@ import React, { Component, Fragment } from 'react';
 import '../css/home.css';
 import Iframe from 'react-iframe';
 
+const quotes = [
+  {author: "Mata Amritanandamayi ",
+  content: "Love sustains everything."},
+  {author: "Casey Neistat",
+  content: "Free time is the enemy of progress."},
+  {author: "Mark Twain",
+  content: "The secret of getting ahead is getting started."},
+  {author: "Robert H. Schuller",
+  content: "Tough times don’t last. Tough people do."},
+  {author: "Coleman Young",
+  content: "Courage is one step ahead of fear."},
+  {author: "Duke Ellington",
+  content: "A problem is a chance for you to do your best."},
+  {author: "Jillian Michaels",
+  content: "It’s not about perfect. It’s about effort."},
+  {author: "Theodore Roosevelt",
+  content: "Believe you can and you’re halfway there."},
+  {author: "Bob Ross",
+  content: "There’s nothing wrong \nwith having a tree as a friend."},
+  {author: "Bob Ross",
+  content: "Alizarin Crimson"},
+  {author: "Bob Ross",
+  content: "Cadmium Yellow"},
+  {author: "Bob Ross",
+  content: "Phthalo Blue"},
+  {author: "Bob Ross",
+  content: "Van Dyke Brown"},
+  {author: "Bob Ross",
+  content: "Yellow Ochre"}
+];
+
 class acad extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      loading: true
+      loading: true,
+      content: '',
+      author: ''
     };
+  }
+
+  newQuote() {
+    let number = (Math.floor(Math.random() * 14));
+    
+    let quote = quotes[number].content;
+    
+    this.setState({content: quote})
+    
+    let author = quotes[number].author;
+    this.setState({author: author})
+  }
+  componentDidMount(){
+    this.newQuote();
   }
   hideSpinner = () => {
     this.setState({
@@ -22,8 +69,8 @@ class acad extends Component{
        
         <div className="loader">
           </div>
-          <div className="txt"> “Love sustains everything.”</div>
-          <div className="txt1">-- Mata Amritanandamayi</div>
+          <div className="txt"> {this.state.content}</div>
+          <div className="txt1"> --{this.state.author} </div>
           
           </Fragment>
       ) : null}
