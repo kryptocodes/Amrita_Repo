@@ -48,8 +48,8 @@ class Tim extends Component {
             <option value="CSE">CSE</option>
             <option value="ECE">ECE</option>
             <option value="EEE">EEE</option>
-            <option value="CE">CIVIL</option>
-            <option value="ME">MECH</option>
+            <option value="CE">CE</option>
+            <option value="ME">ME</option>
           </select>
           <br/>
           <label>Choose Sem</label>
@@ -84,6 +84,9 @@ class Tim extends Component {
     const bh = sec;
     if(dp==="CSE" && sp==="Sem 2" && bh === "A")
       return  window.open(S2CSA);
+    if(dp==="CSE" && sp==="Sem 2" && bh === "B")
+      return  window.open(S2CSA);
+   
     else if(dp==="ECE" && sp==="Sem 2")
       return window.open(S2EC);
     else if(dp==="EEE" && sp==="Sem 2")
