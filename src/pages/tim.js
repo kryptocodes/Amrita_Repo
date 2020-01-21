@@ -5,6 +5,16 @@ import csa from '../img/csa.jpg';
 import csb from '../img/csb.jpg';
 import cse6 from '../img/cse_6.jpg';
 import cse8 from '../img/cse_8.jpg';
+import S2CE from '../img/S2CE.jpg;
+import S2CSA from '../img/S2CS-A.jpg;
+import S2CSB from '../img/S2CS-B.jpg;
+import S2EC from '../img/S2EC.jpg;
+import S2ME from '../img/S2ME.jpg;
+import S2EE from '../img/S2EE.jpg;
+import S4CE from '../img/S4CE.jpg;
+import S4EE from '../img/S4CE.jpg;
+import S4EC from '../img/S2CE.jpg;
+import S4ME from '../img/S2ME.jpg;
 
 class Tim extends Component {
   state = {
@@ -18,7 +28,7 @@ class Tim extends Component {
   }
   renderclass(dept,sem)
   {
-      if(dept==="CSE" && (sem==="Sem 1" || sem === "Sem 4"))
+      if(dept==="CSE" && (sem==="Sem 2" || sem === "Sem 4"))
       return (<div>
       <label>Choose Batch</label>
       <select className="sel" onChange={(e) => this.setState({sec: e.target.value})}>
@@ -38,8 +48,8 @@ class Tim extends Component {
             <option value="CSE">CSE</option>
             <option value="ECE">ECE</option>
             <option value="EEE">EEE</option>
-            <option value="CIVIL">CIVIL</option>
-            <option value="MECH">MECH</option>
+            <option value="CE">CIVIL</option>
+            <option value="ME">MECH</option>
           </select>
           <br/>
           <label>Choose Sem</label>
@@ -72,8 +82,26 @@ class Tim extends Component {
     const dp = dept;
     const sp = sem;
     const bh = sec;
-    if(dp==="CSE" && sp==="Sem 1" && bh === "A")
-      return  window.open("https://5.imimg.com/data5/FA/BB/MY-13366359/office-organisers-500x500.jpg", "_blank");
+    if(dp==="CSE" && sp==="Sem 2" && bh === "A")
+      return  window.open(S2CSA);
+    else if(dp==="ECE" && sp==="Sem 2")
+      return window.open(S2EC);
+    else if(dp==="EEE" && sp==="Sem 2")
+      return window.open(S2EE);
+    else if(dp==="CE" && sp==="Sem 2")
+      return window.open(S2CE);
+    else if(dp==="ME" && sp==="Sem 2")
+      return window.open(S2ME);
+    else if(dp==="ECE" && sp==="Sem 4")
+      return window.open(S4EC);
+    else if(dp==="EEE" && sp==="Sem 4")
+      return window.open(S4EE);
+    else if(dp==="CE" && sp==="Sem 4")
+      return window.open(S4CE);
+    else if(dp==="ME" && sp==="Sem 4")
+      return window.open(S4ME);
+    else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
+      return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
       return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
