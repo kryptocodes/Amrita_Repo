@@ -5,16 +5,16 @@ import csa from '../img/csa.jpg';
 import csb from '../img/csb.jpg';
 import cse6 from '../img/cse_6.jpg';
 import cse8 from '../img/cse_8.jpg';
-import S2CE from '../img/S2CE.jpg;
-import S2CSA from '../img/S2CS-A.jpg;
-import S2CSB from '../img/S2CS-B.jpg;
-import S2EC from '../img/S2EC.jpg;
-import S2ME from '../img/S2ME.jpg;
-import S2EE from '../img/S2EE.jpg;
-import S4CE from '../img/S4CE.jpg;
-import S4EE from '../img/S4CE.jpg;
-import S4EC from '../img/S2CE.jpg;
-import S4ME from '../img/S2ME.jpg;
+import S2CE from '../img/S2CE.jpg';
+import S2CSA from '../img/S2CS-A.jpg';
+import S2CSB from '../img/S2CS-B.jpg';
+import S2EC from '../img/S2EC.jpg';
+import S2ME from '../img/S2ME.jpg';
+import S2EE from '../img/S2EE.jpg';
+import S4CE from '../img/S4CE.jpg';
+import S4EE from '../img/S4CE.jpg';
+import S4EC from '../img/S2CE.jpg';
+import S4ME from '../img/S2ME.jpg';
 
 class Tim extends Component {
   state = {
