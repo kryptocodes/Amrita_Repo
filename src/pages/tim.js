@@ -13,8 +13,8 @@ import S2ME from '../img/S2ME.jpg';
 import S2EE from '../img/S2EE.jpg';
 import S4CE from '../img/S4CE.jpg';
 import S4EE from '../img/S4CE.jpg';
-import S4EC from '../img/S2CE.jpg';
-import S4ME from '../img/S2ME.jpg';
+import S4EC from '../img/S4CE.jpg';
+import S4ME from '../img/S4ME.jpg';
 
 class Tim extends Component {
   state = {
@@ -103,8 +103,6 @@ class Tim extends Component {
       return window.open(S4CE);
     else if(dp==="ME" && sp==="Sem 4")
       return window.open(S4ME);
-    else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
-      return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "A")
       return window.open(csa);
     else if(dp==="CSE" && sp==="Sem 4" && bh === "B")
