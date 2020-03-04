@@ -12,8 +12,8 @@ import S2EC from '../img/S2EC.jpg';
 import S2ME from '../img/S2ME.jpg';
 import S2EE from '../img/S2EE.jpg';
 import S4CE from '../img/S4CE.jpg';
-import S4EE from '../img/S4CE.jpg';
-import S4EC from '../img/S4CE.jpg';
+import S4EE from '../img/S4EE.jpg';
+import S4EC from '../img/S4EC.jpg';
 import S4ME from '../img/S4ME.jpg';
 
 class Tim extends Component {
@@ -85,7 +85,7 @@ class Tim extends Component {
     if(dp==="CSE" && sp==="Sem 2" && bh === "A")
       return  window.open(S2CSA);
     if(dp==="CSE" && sp==="Sem 2" && bh === "B")
-      return  window.open(S2CSA);
+      return  window.open(S2CSB);
    
     else if(dp==="ECE" && sp==="Sem 2")
       return window.open(S2EC);
